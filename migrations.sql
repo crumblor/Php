@@ -1,8 +1,8 @@
 /*
+
 DROP DATABASE users;
 
 CREATE DATABASE stars;
-
 
 USE stars;
 
@@ -12,15 +12,23 @@ CREATE TABLE users (
 	pass VARCHAR(50) NOT NULL
 );
 
+CREATE TABLE stars (
+	id INT PRIMARY KEY NOT NULL AUTO_INCREMENT, 
+	user_id INT NOT NULL,
+	photo_link VARCHAR(255) NOT NULL
+);
+
 INSERT INTO users
 (username,pass)
 VALUES 
 ("Admin", "Admin123");
 
-SELECT * FROM users;*/
+SELECT * FROM users;
 
 CREATE TABLE stars (
 	id INT PRIMARY KEY NOT NULL AUTO_INCREMENT, 
 	image VARCHAR(9001) NOT NULL,
 	user_id INT(255) NOT NULL
 );
+
+*/
